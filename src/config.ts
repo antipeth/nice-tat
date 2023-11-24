@@ -1,6 +1,6 @@
 
 
-export const SITE_NAME = 'Nice Tat'
+export const SITE_NAME = '春风少年兄'
 
 
-export const DESCRIPTION = 'Astro Site Template inspired by Casey Neistat’s ultra minimal personal site. '
+export const DESCRIPTION = '你在世纪大道东门。 '

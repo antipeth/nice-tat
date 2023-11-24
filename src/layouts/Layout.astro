@@ -31,8 +31,8 @@ const pageTitle = [
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={ DESCRIPTION } />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="https://img.0pt.im/blogbuilt/title.jpeg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{ pageTitle }</title>
 
@@ -40,6 +40,11 @@ const pageTitle = [
 	</head>
 	<body class={`text-gray-500 dark:text-gray-100 ${ isHome ? 'is-home' : '' }`}>
 		<div class="max-w-5xl mx-auto space-y-4 py-16 px-14">
+			<header>
+				{ !isHome && (
+					<button onclick="history.go(-1)" class="text">⇦back</button>
+				)}
+			</header>
 			<main 
 				class="max-w-xl"
 			>
@@ -52,6 +57,43 @@ const pageTitle = [
 				)}
 			</footer>
 		</div>
+
+		
+
+		<script type="module">
+			document.addEventListener('keydown', (event) => {
+			  // 检查当前页面是否是 /search
+			  const isSearchPage = window.location.pathname.toLowerCase() === '/search';
+		  
+			  // 如果当前页面是 /search，不执行后续快捷键逻辑
+			  if (isSearchPage) {
+				return;
+			  }
+		  
+			  // 检查是否按下了数字键 '0' 到 '9'
+			  const isNumberKey = (event.key >= '0' && event.key <= '9') || event.code === 'Digit0';
+		  
+			  if (isNumberKey) {
+				const links = Array.from(document.querySelectorAll('a'));
+				const index = event.key === '0' ? 9 : parseInt(event.key, 10) - 1;
+		  
+				if (index >= 0 && index < links.length) {
+				  window.location.href = links[index].href;
+				}
+			  } else if (event.key.toLowerCase() === 'b') {
+				// 按下 'b' 键时返回上一级
+				history.back();
+			  } else if (event.key.toLowerCase() === 'h') {
+				// 按下 'h' 键时返回主页
+				window.location.href = '/';
+			  } else if (event.key.toLowerCase() === 'o') {
+				// 按下 'o' 键时传送到特定的 URL
+				const targetUrl = 'https://blog.0pt.im';
+				window.location.href = targetUrl;
+			  }
+			});
+		  </script>
+		  
 	</body>
 </html>
 <style is:global>
@@ -68,14 +110,14 @@ const pageTitle = [
 	}
 	html {
 		font-family: "JetBrains Mono", system-ui, sans-serif;
-		font-size: 12px;
-		line-height: 1.2rem;
+		font-size: 28px;
+		line-height: 1.8rem;
 		background: #13151a;
 		background-size: 224px;
 	}
 
 	/* Light mode */
-	@media (prefers-color-scheme: light) {
+	@media (prefers-color-scheme: dark) {
 		html {
 			background: #fff;
 		}
@@ -114,6 +156,20 @@ const pageTitle = [
 
 
 	body:not(.is-home) a {
-		text-decoration: underline;
+		text-decoration: none;
 	}
+
+		/* 添加按钮样式 */
+	button {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+		45deg,
+		rgb(var(--accent)),
+		rgb(var(--accent-light)) 30%,
+		white 60%
+		);
+	}
+
 </style>

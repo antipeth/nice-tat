@@ -1,17 +1,24 @@
 ---
 layout: ../layouts/Layout.astro
-title: Nice Tat Astro Template
+
+title: 世纪大道
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
 
-# Nice Tat Astro Template
+# 春风少年兄
 
-[youtube](https://www.youtube.com/watch?v=sEyHnHjhlr4)
+[找](/search)
 
-[instagram](https://www.instagram.com/caseyneistat/)
+[学](/learn)
 
-[onlyfans](/onlyfans)
+[音](/music)
 
-[twitter](https://twitter.com/Casey)
+[游](/game)
 
-[contact](/contact)
+[感](/think)
+
+[链](/link)
+
+[HELP](/help)
+
+
