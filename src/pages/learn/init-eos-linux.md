@@ -136,3 +136,29 @@ yay -S snap-pac-grub
 yay -S snapper-support
 ```
 
+
+# vscodium更换官方插件源
+
+找到`vscodium`的安装的文件夹。这里，我的eos的路径是`/opt/vscodium-bin`
+
+在`/opt/vscodium-bin/resources/app` 中找到`product.json` 这个文件。
+
+打开该文件，找到如下内容：
+
+```product.json
+  "extensionsGallery": {
+    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+    "itemUrl": "https://open-vsx.org/vscode/item"
+  },
+```
+
+将其改为：
+
+```product.json
+	"extensionsGallery": {
+		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"itemUrl": "https://marketplace.visualstudio.com/items"
+	},
+```
+
+保存后重启vscodium，更换完毕。
