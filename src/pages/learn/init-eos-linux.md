@@ -3,7 +3,7 @@ layout: ../../layouts/Layout.astro
 title: 学
 ---
 
-# 基本
+## 基本
 
 ```bash
 systemctl stop reflector.service
@@ -15,20 +15,18 @@ sudo pacman -S paru
 sudo pacman -S pacman-contrib
 sudo pacman -S discover
 sudo pacman -S filelight
-yay -S discover
+yay -S marktext-bin
 yay -S octopi
 yay -S brave-bin
 yay -S keepassxc
-yay -S stacer
 sudo pacman -S libreoffice-still libreoffice-still-zh-cn
-paru -S joplin-desktop
 sudo pacman -S firefox-developer-edition
 sudo pacman -S vlc
 sudo pacman -S thunderbird thunderbird-i18n-zh-cn
 sudo pacman -S obs-studio
 yay -S schildichat-desktop-bin
 sudo pacman -S tabby-bin
-paru -S vscodium
+paru -S vscodium-bin
 ```
 
 # 安装fcitx5-rime输入法
@@ -133,9 +131,13 @@ yay -S grub-btrfs
 yay -S btrfs-assistant
 yay -S btrfsmaintenance
 yay -S snap-pac-grub
-yay -S snapper-support
 ```
 
+然后，请先打开一下 Btrfs Assistant ，退出后再运行下面这个：
+
+```bash
+yay -S snapper-support
+```
 
 # vscodium更换官方插件源
 
@@ -155,10 +157,10 @@ yay -S snapper-support
 将其改为：
 
 ```product.json
-	"extensionsGallery": {
-		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
-		"itemUrl": "https://marketplace.visualstudio.com/items"
-	},
+    "extensionsGallery": {
+        "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+        "itemUrl": "https://marketplace.visualstudio.com/items"
+    },
 ```
 
 保存后重启vscodium，更换完毕。
