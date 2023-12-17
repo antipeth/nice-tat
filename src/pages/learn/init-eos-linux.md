@@ -133,7 +133,7 @@ yay -S btrfsmaintenance
 yay -S snap-pac-grub
 ```
 
-然后，请先打开一下 Btrfs Assistant ，退出后再运行下面这个：
+然后，请先打开一下 Btrfs Assistant 这个应用，退出后再运行下面这个：
 
 ```bash
 yay -S snapper-support
