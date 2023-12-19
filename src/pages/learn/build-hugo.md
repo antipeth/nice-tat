@@ -7,6 +7,12 @@ title: 学
 
 本篇基于的环境是arch linux。
 
+没有安装git可以先用包管理器安装git。
+
+```bash
+yay -S git
+```
+
 安装go语言：
 
 ```bash
@@ -83,11 +89,13 @@ hugo server
 
 先注册一个[github](https://github.com)
 
-生成密钥，在本地运行，(中间需要输入的可以直接回车即可)：
+生成密钥，在本地运行：
 
 ```bash
 ssh-keygen -t rsa
 ```
+
+然后一路回车。
 
 ![](https://img.0pt.icu/learn/build-hugo/5.png)
 
@@ -139,12 +147,6 @@ ssh-keygen -t rsa
 
 现在转战本地。
 
-本地如果没有`git`就用**包管理器**安装`git`
-
-```bash
-yay -S bash
-```
-
 打开终端，运行：
 
 ```bash
@@ -156,7 +158,7 @@ git config --global user.email yourEmail
 
 进入你本地的博客文件夹的根目录。
 
-(不知道博客文件夹的根目录是什么的。请从上文中的 1.本地部署hugo的 创建博客文件 到 进入**博客文件夹的根目录**  部分里面自行理解推断。)
+(不知道博客文件夹的根目录是什么的。请从上文中的 1.本地部署hugo的 创建博客文件 到 进入**博客文件夹的根目录** 部分里面自行理解推断。)
 
 初始化博客文件夹为git仓库。
 
@@ -293,9 +295,9 @@ git push -f myblog main
 
 ![](https://img.0pt.icu/learn/build-hugo/42.png)
 
-这里域名也可以了，现在可以通过访问https://myblog.0pt.icu来访问博客了。
+这里域名也可以了，现在可以通过访问[https://myblog.0pt.icu来访问博客了。](https://myblog.0pt.icu%E6%9D%A5%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82)
 
-[myblog]([https://myblog.0pt.icu](https://myblog.0pt.icu))
+[myblog](%5Bhttps://myblog.0pt.icu%5D(https://myblog.0pt.icu))
 
 ![](https://img.0pt.icu/learn/build-hugo/43.png)
 
@@ -309,7 +311,7 @@ git push -f myblog main
 hugo server -D
 ```
 
-访问 http://localhost:1313 查看效果。
+访问 [http://localhost:1313](http://localhost:1313) 查看效果。
 
 然后运行：
 
