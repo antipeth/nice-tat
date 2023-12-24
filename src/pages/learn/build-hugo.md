@@ -1,6 +1,8 @@
 ---
 layout: ../../layouts/Layout.astro
 title: 学
+description: 一些关于学习的内容
+pubDate: Fri, 24 Dec 2023 12:00:00 GMT
 ---
 
 # 1.本地搭建hugo
