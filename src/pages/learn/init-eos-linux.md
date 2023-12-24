@@ -164,3 +164,19 @@ yay -S snapper-support
 ```
 
 保存后重启vscodium，更换完毕。
+
+# 配置Wayland
+
+```bash
+yay -S plasma-wayland-session
+yay -S pipewire
+sudo cp -rp /usr/share/pipewire/* /etc/pipewire/
+yay -S pipewire-pulse
+systemctl --user enable pipewire.service
+systemctl --user start pipewire.service
+yay -S libpipewire
+yay -S gst-plugin-pipewire
+yay -S xdg-desktop-portal-kde
+yay -S wayland-protocols
+yay -S xdg-desktop-portal-gtk
+```
