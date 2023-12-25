@@ -1,9 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
-
 title: 世纪大道
 ---
-<!-- Markdown Preview - https://dillinger.io/ -->
 
 # 春风少年兄
 
@@ -18,6 +16,8 @@ title: 世纪大道
 [感](/think)
 
 [链](/link)
+
+[RSS](/rss.xml)
 
 [HELP](/help)
 

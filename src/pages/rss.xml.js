@@ -2,12 +2,13 @@ import rss from '@astrojs/rss';
 import sanitizeHtml from 'sanitize-html';
 
 export function GET(context) {
-  const postImportResult = import.meta.glob('./learn/*.md', { eager: true });
+  const postImportResult = import.meta.glob('./rss-share/*.md', { eager: true });
   const posts = Object.values(postImportResult);
   return rss({
-    title: 'Buzz’s Blog',
-    description: 'A humble Astronaut’s guide to the stars',
+    title: '春风少年兄',
+    description: '你在世纪大道东门。 ',
     site: context.site,
+    stylesheet: '/rss/pretty-feed-v3.xsl',
     items: posts.map((post) => ({
       link: post.url,
       content: sanitizeHtml(post.compiledContent(), {
