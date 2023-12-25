@@ -10,7 +10,13 @@ export function GET(context) {
     site: context.site,
     items: posts.map((post) => ({
       link: post.url,
-      content: sanitizeHtml(post.compiledContent()),
+      content: sanitizeHtml(post.compiledContent(), {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
+        allowedAttributes: {
+          ...sanitizeHtml.defaults.allowedAttributes,
+          img: ['src', 'alt', 'title', 'width', 'height'], // 允许img标签的这些属性
+        },
+      }),
       ...post.frontmatter,
     })),
   });
