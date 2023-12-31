@@ -28,7 +28,7 @@ title: 链
    - <img src="https://neo.lkt.icu/_matrix/media/r0/thumbnail/lkt.icu/ymSHRTuodBGBzznxzlDpmwrs?width=513&height=513&method=scale" alt="Dichgrem Logo" style="max-width: 50px; max-height: 50px;">
    - *Dich的小站*
 
-6. [TBX]([https://mhp.0pt.icu](https://mhp.0pt.icu))
-   
-   - 
-   - tbx的博客
+6. [**TBX**](https://blog.tbx.lockey.icu/)
+
+   - <img src="https://blog.tbx.lockey.icu/img/wang_hud5f9953526dc58ed8258b5f30304317e_856413_300x0_resize_box_3.png" alt="TBX Logo" style="max-width: 50px; max-height: 50px;"> 
+   - *我并没有从那段日子里走出来，是它自己走过去的。*
