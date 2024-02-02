@@ -14,21 +14,26 @@ eos-update
 sudo pacman -S yay
 yay -Syyu
 sudo pacman -S paru
+paru -Syyu
 sudo pacman -S pacman-contrib
 sudo pacman -S discover
 sudo pacman -S filelight
-yay -S marktext-bin
-yay -S octopi
-yay -S brave-bin
-yay -S keepassxc
+paru -S marktext-bin
+paru -S octopi
+paru -S bauh
+paru -S brave-bin
+paru -S keepassxc
+paru -S bitwarden
 sudo pacman -S libreoffice-still libreoffice-still-zh-cn
 sudo pacman -S firefox-developer-edition
 sudo pacman -S vlc
 sudo pacman -S thunderbird thunderbird-i18n-zh-cn
 sudo pacman -S obs-studio
-yay -S schildichat-desktop-bin
-sudo pacman -S tabby-bin
+paru -S schildichat-desktop-bin
+paru -S tabby-bin
 paru -S vscodium-bin
+paru -S anytype-bin
+paru -S joplin-beta-appimage
 ```
 
 # 安装fcitx5-rime输入法

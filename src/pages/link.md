@@ -23,7 +23,7 @@ title: 链
    - <img src="https://img.nanimonai.org/headimg.jpg" alt="nanimonai Logo" style="max-width: 50px; max-height: 50px;">
    - *吾魂兮无求乎永生，竭尽兮人事之所能*
 
-5. [**Dichgrem**](https://dich.ink/)
+5. [**Dichgrem**](https://blog.dich.ink/)
    
    - <img src="https://neo.lkt.icu/_matrix/media/r0/thumbnail/lkt.icu/ymSHRTuodBGBzznxzlDpmwrs?width=513&height=513&method=scale" alt="Dichgrem Logo" style="max-width: 50px; max-height: 50px;">
    - *Dich的小站*

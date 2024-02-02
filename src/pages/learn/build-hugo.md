@@ -299,7 +299,7 @@ git push -f myblog main
 
 这里域名也可以了，现在可以通过访问[https://myblog.0pt.icu来访问博客了。](https://myblog.0pt.icu%E6%9D%A5%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82)
 
-[myblog](%5Bhttps://myblog.0pt.icu%5D(https://myblog.0pt.icu))
+[myblog](<%5Bhttps://myblog.0pt.icu%5D(https://myblog.0pt.icu)>)
 
 ![](https://img.0pt.icu/learn/build-hugo/43.png)
 
@@ -340,3 +340,4 @@ git push -f myblog main
 感谢[Yon Zilch](https://yon.im) 提供的方案。
 
 感谢[Purkit](https://purkit.lockey.icu/) 提供的[教程]([Ubuntu平台下使用Vercel+Hugo搭建静态博客 | Purkit's Blog](https://purkit.lockey.icu/2022/11/11/hello-hugo/)) 。
+

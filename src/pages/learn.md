@@ -8,3 +8,4 @@ title: 学
 [配置Eos Linux](/learn/init-eos-linux)
 
 [基于Arch Linux搭建hugo博客](/learn/build-hugo)
+
