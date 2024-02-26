@@ -17,6 +17,8 @@ title: 世纪大道
 
 [链](/link)
 
+[about](/about)
+
 [RSS](/rss.xml)
 
 [HELP](/help)
