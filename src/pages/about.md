@@ -3,6 +3,8 @@ layout: ../layouts/Layout.astro
 title: 世纪大道
 ---
 
+![](https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg)
+
 # About Me
 
 Hey there, I'm a computer science student. I dig rock music, Linux, and all things intriguing.
