@@ -13,5 +13,6 @@ pubDate: Fri, 24 Dec 2023 12:00:00 GMT
 
 [2024.1-2024.1 第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前](/learn/linux-trip/3)
 
-[2024.1-?????? 第四回，舍KDE抱Hyprland，新境界追求更添](/learn/linux-trip/4)
+[2024.1-2024.3 第四回，舍KDE抱Hyprland，新境界追求更添](/learn/linux-trip/4)
 
+[2024.3-??????? 第四回，渐觉Arch无力持，转投NixOS获新生](/learn/linux-trip/5)

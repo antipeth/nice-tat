@@ -340,4 +340,3 @@ git push -f myblog main
 感谢[Yon Zilch](https://yon.im) 提供的方案。
 
 感谢[Purkit](https://purkit.lockey.icu/) 提供的[教程]([Ubuntu平台下使用Vercel+Hugo搭建静态博客 | Purkit's Blog](https://purkit.lockey.icu/2022/11/11/hello-hugo/)) 。
-

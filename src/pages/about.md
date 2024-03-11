@@ -5,6 +5,12 @@ title: 世纪大道
 
 ![](https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg)
 
+*This is my arch linux.*
+
+![](https://img.0pt.icu/learn/linux-trip/5/1.jpg)
+
+*This is my NixOS*
+
 # About Me
 
 Hey there, I'm a computer science student. I dig rock music, Linux, and all things intriguing.

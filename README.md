@@ -13,8 +13,8 @@ Great for a LinkInBio type site or just a placeholder while you work on getting 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ThatGuySam/nice-tat)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ThatGuySam/nice-tat)
 
-
 ## 🌟 Features
+
 - ✅ One-Click Deploy to Netlify or Vercel
 - ✅ Markdown for Easy Edits
 - ✅ TailwindCSS for Easy Styling
@@ -24,25 +24,20 @@ Great for a LinkInBio type site or just a placeholder while you work on getting 
 - 📝 Detailed README for Quick Setup
 - 📸 onlyfans
 
-
 ## 🛠 The Stack
+
 - Astro
 - Tailwind
 - HTML
 - Markdown
 
-
-
 ## 🚀 How to setup
 
 Simply click one of the deploy buttons above, fill in the site details and your site should be running in about 2 mins. 
 
-
-
 ## ✏️ Editing the Site
 
 You can edit the site directly on GitHub or clone the repo to your local machine. 
-
 
 ## 📄 Adding a new page
 
@@ -50,11 +45,9 @@ To add a new page simply create a new Markdown file in the /src/pages directory,
 
 You can also copy and paste an existing markdown file. 
 
-
 ## 🌍 Site Wide Options
 
 You can customize the site name as well as other options for the whole site in src/config.ts
-
 
 ## ❓ Why not add X, Y, and Z?
 
@@ -62,17 +55,13 @@ Because HTML is a beautiful language not everything needs to use the latest tool
 
 If you really want to extend the site the Astro Docs should get you pretty far: https://docs.astro.build/en/getting-started/
 
-
 ## ❓ Additional questions
 
 You can ask the [ChatGPT Bot](https://chat.openai.com/share/4cb54749-4580-4d18-9be5-89265ef9f33d) for this project or or open a new Issue [here](https://github.com/ThatGuySam/nice-tat/issues)
 
-
 ## 🙏 Credits
+
 Inspired by [Casey Neistat's Website](https://www.caseyneistat.com/).
-
-
-
 
 ## 👀 Want to learn more about Astro?
 

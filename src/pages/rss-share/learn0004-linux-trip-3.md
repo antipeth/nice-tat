@@ -328,6 +328,7 @@ paru -S rofi
 # 8.配置rofi
 
 在~/.config/rofi/目录下创建`config.rasi`文件。
+
 ```config.rasi
 configuration {
   display-drun: "Applications:";
@@ -335,7 +336,7 @@ configuration {
   drun-display-format: "{name}";
   font: "JetBrains Mono";
   // modi: "window,run,drun,emoji,calc";
-  
+
   // enabling the icons
   show-icons: true;
   icon-theme: "Papirus";
@@ -351,7 +352,7 @@ configuration {
   fg: #cdd6f4;
   fg-alt: #7f849c;
 
-  
+
   border: 0;
   margin: 0;
   padding: 0;
@@ -416,7 +417,6 @@ prompt {
 }
 
 /* vim: ft=sass
-
 ```
 
 我的配置比较简单，运行
@@ -549,7 +549,6 @@ paru -S waybar
     }
 }
 // vim: ft=jsonc
-
 ```
 
 在`~/.config/waybar`目录下创建`style.css`文件。定义状态栏的样式。
@@ -765,7 +764,6 @@ label:focus {
 
 /* vim: ft=sass
 */
-
 ```
 
 在`config`文件中，我们还定义了一个`powermenu`和`rofi-wifi-menu`。
@@ -773,19 +771,20 @@ label:focus {
 这是我的自定义脚本。
 
 在/usr/bin/目录下，创建`powermenu`。
+
 ```powermenu
 #! /bin/sh
 
 chosen=$(printf "  Power Off\n  Restart\n  Suspend\n  Hibernate\n  Log Out\n  Lock" | rofi -dmenu -i -theme-str '@import "power.rasi"')
 
 case "$chosen" in
-	"  Power Off") poweroff ;;
-	"  Restart") reboot ;;
-	"  Suspend") systemctl suspend-then-hibernate ;;
-	"  Hibernate") systemctl hibernate ;;
-	"  Log Out") bspc quit ;;
-	"  Lock") betterlockscreen -l ;;
-	*) exit 1 ;;
+    "  Power Off") poweroff ;;
+    "  Restart") reboot ;;
+    "  Suspend") systemctl suspend-then-hibernate ;;
+    "  Hibernate") systemctl hibernate ;;
+    "  Log Out") bspc quit ;;
+    "  Lock") betterlockscreen -l ;;
+    *) exit 1 ;;
 esac
 ```
 
@@ -797,7 +796,7 @@ inputbar {
 }
 
 listview {
-	lines: 6;
+    lines: 6;
 }
 ```
 
@@ -812,9 +811,9 @@ wifi_list=$(nmcli --fields "SECURITY,SSID" device wifi list | sed 1d | sed 's/  
 
 connected=$(nmcli -fields WIFI g)
 if [[ "$connected" =~ "enabled" ]]; then
-	toggle="󰖪  Disable Wi-Fi"
+    toggle="󰖪  Disable Wi-Fi"
 elif [[ "$connected" =~ "disabled" ]]; then
-	toggle="󰖩  Enable Wi-Fi"
+    toggle="󰖩  Enable Wi-Fi"
 fi
 
 # Use rofi to select wifi network
@@ -823,30 +822,25 @@ chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selec
 read -r chosen_id <<< "${chosen_network:3}"
 
 if [ "$chosen_network" = "" ]; then
-	exit
+    exit
 elif [ "$chosen_network" = "󰖩  Enable Wi-Fi" ]; then
-	nmcli radio wifi on
+    nmcli radio wifi on
 elif [ "$chosen_network" = "󰖪  Disable Wi-Fi" ]; then
-	nmcli radio wifi off
+    nmcli radio wifi off
 else
-	# Message to show when connection is activated successfully
-  	success_message="You are now connected to the Wi-Fi network \"$chosen_id\"."
-	# Get saved connections
-	saved_connections=$(nmcli -g NAME connection)
-	if [[ $(echo "$saved_connections" | grep -w "$chosen_id") = "$chosen_id" ]]; then
-		nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
-	else
-		if [[ "$chosen_network" =~ "" ]]; then
-			wifi_password=$(rofi -dmenu -p "Password: " )
-		fi
-		nmcli device wifi connect "$chosen_id" password "$wifi_password" | grep "successfully" && notify-send "Connection Established" "$success_message"
+    # Message to show when connection is activated successfully
+      success_message="You are now connected to the Wi-Fi network \"$chosen_id\"."
+    # Get saved connections
+    saved_connections=$(nmcli -g NAME connection)
+    if [[ $(echo "$saved_connections" | grep -w "$chosen_id") = "$chosen_id" ]]; then
+        nmcli connection up id "$chosen_id" | grep "successfully" && notify-send "Connection Established" "$success_message"
+    else
+        if [[ "$chosen_network" =~ "" ]]; then
+            wifi_password=$(rofi -dmenu -p "Password: " )
+        fi
+        nmcli device wifi connect "$chosen_id" password "$wifi_password" | grep "successfully" && notify-send "Connection Established" "$success_message"
     fi
 fi
 ```
 
 waybar配置完成。
-
-
-
-
-
