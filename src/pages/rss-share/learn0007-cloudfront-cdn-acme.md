@@ -1,7 +1,7 @@
 ---
 title: clouffront配置小鸡cdn
+description: 使用cloudfront为自己的服务器套CDN,并使用acms.sh自动获取证书
 pubDate: 2024-03-03T00:48:58+08:00
-description: 使用cloudfront为自己的服务器套CDN,并使用acms.sh自动获取证书。
 ---
 
 # 1.CloudFront配置

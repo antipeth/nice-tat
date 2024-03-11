@@ -1,8 +1,8 @@
-```yaml
+---
 title: 探索Linux之旅 第五回，渐觉Arch无力持，转投NixOS获新生
 description: 对NixOS进行初步配置，替换Arch作为主力系统
 pubDate: 2024-3-02T18:17:28+08:00
-```
+---
 
 # 第五回，渐觉Arch无力持，转投NixOS获新生
 
